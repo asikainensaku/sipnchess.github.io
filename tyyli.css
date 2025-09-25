@@ -1,0 +1,202 @@
+body {
+    color:#ffe699;
+    background-color: #331a00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 0;
+
+}
+header {
+    text-align: center;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header p {
+    font-size: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 80px;
+}
+.header h1 {
+    font-size: 60px;
+    margin: 60px;
+}
+
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#ffe699;
+    background-color:#003300;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 5px solid #ffe699;
+    width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  text-align: center;       /* center text */
+  gap: 10px;                /* spacing between sections */
+}
+
+footer a {
+    color: #ffe699;        /* match footer font color */
+    text-decoration: none; /* remove underline */
+}
+
+/*päävalikko*/
+.navigointi {
+    display: flex;               /* row layout */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically */
+    gap: 150px;                   /* equal space between boxes */
+    margin-top: 50px;            /* push down from top */
+    width: 100%;                 /* span full container */
+    padding: 0;                  /* remove extra padding */
+}
+.navigointi a {
+    background: #003300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffe699;
+    text-decoration: none;
+
+    display: flex;               /* center text inside each box */
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 50px;
+    border: 2px solid #003300;
+    border-radius: 8px;
+    transition: transform 0.2s;
+
+    margin: 0;                   /*  remove margin-right */
+}
+
+.navigointi a:hover {
+    color: #ffe699;
+    background-color: rgb(62, 133, 60);
+    transform: scale(1.1);
+}
+
+.navigointi a.valittu {
+    color: #ffe699;
+    background-color:rgb(121, 209, 63);
+}
+.toimintakehote {
+    border: 2px solid #003300;
+    border-radius: 10px;
+    background-color: #003300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:#ffe699;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.full-width{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-container {
+    background: url("paakuva_baari.jpg") no-repeat center center;
+    background-size: cover;   /* makes it cover the whole container */
+    width: 100%;
+    height: 900px;            /* fixed height ensures it has space */
+    border-bottom: 5px solid #ffe699;
+    display: flex;            /* allow content inside to use flex */
+    flex-direction: column;   /* stack nav, text, etc vertically */
+    align-items: center;      /* center items horizontally */
+}
+
+.some-ikonit {
+  display: flex;
+  gap: 15px;
+}
+
+/* ---------- Layout ---------- */
+.sisalto{
+  display: flex;
+  flex-wrap: wrap; /* stack on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+}
+.vasen {
+  flex: 1 1 55%;
+  margin-top: 70px;
+}
+.vasen h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  
+}
+
+.vasen h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.vasen p {
+  margin-bottom: 1rem;
+ 
+}
+.oikea {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oikea img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border: 5px solid #ffe699
+}
+
+
+.some-ikonit a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* someikoni-värit */
+.some-ikonit a.facebook {
+  background: #1877f2; 
+}
+
+.some-ikonit a.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.some-ikonit a.tiktok {
+  background: black;
+}
+
+.some-ikonit a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
