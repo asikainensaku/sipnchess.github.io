@@ -209,3 +209,26 @@ footer a {
   transform: scale(1.1);
   opacity: 0.8;
 }
+/*menu kuvat ja teksti*/
+.sisalto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.sisalto.reverse {
+  flex-direction: row-reverse;
+}
+
+.teksti {
+  flex: 1;
+}
+
+.kuva {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
