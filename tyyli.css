@@ -293,7 +293,7 @@ footer a {
 @media (max-width: 768px) {
     header {
         position: relative;
-        padding-top: 60px; /* tilaa burgerille */
+        padding-top: 0px; /* tilaa burgerille */
     }
 
     .burger {
@@ -332,9 +332,44 @@ footer a {
         background-color: rgb(62, 133, 60);
     }
        .header h1 {
-        font-size: 32px;   /* pienempi koko mobiilissa */
-        margin: 10px 0;    /* pienemmät marginaalit */
-        line-height: 1.2;  /* riviväli tiiviimmäksi */
-        text-align: center; /* keskitys */
+        font-size: 42px;
+        margin: 50px 0;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .header p {
+        font-size: 80px;
+        margin: 7% 0;
+        text-align: center;
+    }
+
+    .toimintakehote {
+        font-size: 40px;
+        padding: 10px 20px;
+    }
+     .sisalto {
+        flex-direction: column; /* pinota teksti ja kuva päällekkäin */
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .teksti, .kuva {
+        flex: 1 1 100%;
+        margin-top: 10px;
+    }
+
+    .kuva img {
+        max-width: 100%;
+        height: auto; /* säilyttää kuvasuhteen */
+    } footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .some-ikonit {
+        justify-content: center;
     }
 }
+ 
