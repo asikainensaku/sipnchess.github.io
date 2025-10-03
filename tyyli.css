@@ -371,5 +371,31 @@ footer a {
     .some-ikonit {
         justify-content: center;
     }
+    .header {
+        text-align: center;
+    }
+
+    .header h1,
+    .header p,
+    .header .toimintakehote {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Sisältö keskelle */
+    .sisalto,
+    .alisivusisalto {
+        flex-direction: column; /* Pinottu pystysuoraan */
+        align-items: center;    /* Keskitys horisontaalisesti */
+        text-align: center;     /* Tekstit keskelle */
+    }
+
+    .teksti, .alisivuteksti, .intro {
+        margin: 0 auto;
+    }
+
+    .kuva, .alisivukuva {
+        justify-content: center; /* Kuva keskelle */
+    }
 }
  
