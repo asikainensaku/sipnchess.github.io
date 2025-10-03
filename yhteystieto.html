@@ -9,33 +9,32 @@
 </head> 
 <body>
     <header class="header">
+        <!-- Burgeri mobiilissa -->
+        <button class="burger" aria-label="Valikko">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <nav class="navigointi">
             <a href="index.html">Sip 'n Chess</a>
             <a href="menu.html">Menu</a>
             <a href="yhteystieto.html" class="valittu">Yhteystiedot</a>
         </nav>
+
         <h1>Odotamme seuraavaa siirtoasi!</h1>
-        
     </header>
 
     <main class="sisalto">
-<div class = "teksti">
- <h2>Löydät meidät laudalta!</h2>
-            <p>Olemme pieni ja tunnelmallinen cocktailbaari Kalliossa. Tilaamme sijaitsee hyvien julkisten kulkuyhteyksien varrella.  </p>
-    
+        <div class="teksti">
+            <h2>Löydät meidät laudalta!</h2>
+            <p>Olemme pieni ja tunnelmallinen cocktailbaari Kalliossa. Tilaamme sijaitsee hyvien julkisten kulkuyhteyksien varrella.</p>
             <h2>Aukioloajat:</h2>
             <p>Ma - ke: 14.00 - 01.00</p>
             <p>To - La: 13.00 - 03.00</p>
-            <P>Su: 15.00 - 23.00</P>
+            <p>Su: 15.00 - 23.00</p>
             <h3>Olethan yhteydessä!</h3>
-            <p class = "drinkit">Hämeentie 1, 00530 Helsinki </p>
-            <p class = "drinkit">info@sipnchess.fi</p>
-            <p class = "drinkit">+358449737342</p>
-
-
-        
-
-           
+            <p class="drinkit">Hämeentie 1, 00530 Helsinki</p>
+            <p class="drinkit">info@sipnchess.fi</p>
+            <p class="drinkit">+358449737342</p>
         </div>
 
         <div class="kartta">
@@ -62,5 +61,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Burger-valikon toiminta
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navigointi');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
