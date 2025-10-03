@@ -213,15 +213,25 @@ footer a {
 
 /*KARTTA*/
 .kartta {
-    flex: 0 0 500px; 
+    flex: 0 1 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px; 
-    border: 5px solid #ffe699
+      border-radius: 12px;
+  border: 5px solid #ffe699
+  
 }
 
 .kartta iframe {
     width: 100%;   
     height: 600px; 
-    border: 5px solid #ffe699
+   max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 5px solid #ffe699
 }
 
 /* ALISIVUN Tekstisisältö sivulla (vasemmalla)*/
