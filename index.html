@@ -9,6 +9,9 @@
     
 </head>
 <body>
+    <button class="burger" aria-label="Valikko">
+            <i class="fas fa-bars"></i>
+        </button>
     <header class="header">
         <div class="etusivunpaakuva" src="paakuva_baari.jpg"> <!-- Iso kuva ylhäällä ja headerin alla -->
             
@@ -103,5 +106,14 @@
             </div>
         </div>
    </footer>
+   <script>
+        // Burger-valikon toiminta
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navigointi');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
