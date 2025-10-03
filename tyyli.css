@@ -284,3 +284,57 @@ footer a {
   margin-bottom: 70px;
   border: 5px solid #ffe699
 }
+/* Burgeri oletuksena piilossa desktopissa */
+.burger {
+    display: none;
+}
+
+/* Mobiilissa burgeri näkyviin ja linkit piiloon */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        padding-top: 60px; /* tilaa burgerille */
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 24px;
+        color: #ffe699;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .navigointi {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        gap: 0;
+    }
+
+    .navigointi a {
+        display: none;
+        width: 100%;
+        padding: 10px 15px;
+        border-bottom: 1px solid #224422;
+    }
+
+    .navigointi.active a {
+        display: block;
+    }
+
+    .navigointi a:hover {
+        transform: none;
+        background-color: rgb(62, 133, 60);
+    }
+       .header h1 {
+        font-size: 32px;   /* pienempi koko mobiilissa */
+        margin: 10px 0;    /* pienemmät marginaalit */
+        line-height: 1.2;  /* riviväli tiiviimmäksi */
+        text-align: center; /* keskitys */
+    }
+}
