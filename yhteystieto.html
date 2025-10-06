@@ -9,11 +9,11 @@
 </head> 
 <body>
     <header class="header">
-        <!-- Burgeri mobiilissa -->
+      <!-- burgervalikko mobiiliin-->
         <button class="burger" aria-label="Valikko">
             <i class="fas fa-bars"></i>
         </button>
-
+     <!-- Navigointipalkki tietokoneella-->
         <nav class="navigointi">
             <a href="index.html">Sip 'n Chess</a>
             <a href="menu.html">Menu</a>
@@ -26,7 +26,7 @@
     <main class="sisalto">
         <div class="teksti">
             <h2>Löydät meidät laudalta!</h2>
-            <p>Olemme pieni ja tunnelmallinen cocktailbaari Kalliossa. Tilaamme sijaitsee hyvien julkisten kulkuyhteyksien varrella.</p>
+            <p>Olemme pieni ja tunnelmallinen cocktailbaari Kalliossa. Tilaamme sijaitsee hyvien julkisten kulkuyhteyksien varrella. Sekä meillä pystyy myös järjestämään yksityistilaiosuuksia, joten ota yhteyttä!</p>
             <h2>Aukioloajat:</h2>
             <p>Ma - ke: 14.00 - 01.00</p>
             <p>To - La: 13.00 - 03.00</p>
@@ -37,7 +37,8 @@
             <p class="drinkit">+358449737342</p>
         </div>
 
-        <div class="kartta">
+        <div class="kartta"> 
+            <!--Upotettu kartta-->
             <iframe id="kartta" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.069868132561!2d24.946587993057975!3d60.18015401067367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bd4f6f949d9%3A0x351dd0dee6d208a3!2sH%C3%A4meentie%201%2C%2000530%20Helsinki!5e0!3m2!1sfi!2sfi!4v1759325430247!5m2!1sfi!2sfi" 
                 style="border:0;" allowfullscreen="" loading="lazy" 
@@ -61,9 +62,8 @@
             </div>
         </div>
     </footer>
-
+<!--Burgervalikon toiminta javascriptilla-->
     <script>
-        // Burger-valikon toiminta
         const burger = document.querySelector('.burger');
         const nav = document.querySelector('.navigointi');
 
