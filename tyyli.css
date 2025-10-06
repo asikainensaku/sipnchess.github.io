@@ -1,4 +1,12 @@
 /*Runko*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
 body {
     color:#ffe699;
     background-color: #331a00;
@@ -399,3 +407,6 @@ footer a {
     }
 }
  
+  
+
+    
