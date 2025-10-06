@@ -1,4 +1,5 @@
-/*Runko*/
+
+ /*Runko*/
 html, body {
     margin: 0;
     padding: 0;
@@ -405,8 +406,130 @@ footer a {
     .kuva, .alisivukuva {
         justify-content: center; /* Kuva keskelle */
     }
+@media (min-width: 1200px) {
+  /* HEADER */
+  .header p {
+    font-size: 180px;
+    margin: 120px auto 60px auto;
+  }
+
+  .header h1 {
+    font-size: 90px;
+    margin: 40px auto;
+  }
+
+  /* NAVIGOINTI */
+  .navigointi {
+    gap: 200px;
+    margin-top: 70px;
+  }
+
+  .navigointi a {
+    width: 180px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  /* CTA */
+  .toimintakehote {
+    font-size: 40px;
+    padding: 25px 60px;
+    margin-top: 50px;
+  }
+
+  /* SISÄLTÖALUE */
+  .sisalto {
+    max-width: 1600px;
+    padding: 3rem 4rem;
+    gap: 4rem;
+  }
+
+  .teksti {
+    flex: 1 1 60%;
+    margin-top: 80px;
+    font-size: 20px;
+  }
+
+  .teksti h2 {
+    font-size: 36px;
+  }
+
+  .teksti h3 {
+    font-size: 30px;
+  }
+
+  .teksti p {
+    font-size: 20px;
+  }
+
+  .intro p {
+    font-size: 24px;
+  }
+
+  .kuva {
+    flex: 1 1 35%;
+  }
+
+  .kuva img {
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  /* ALISIVUN SISÄLTÖ */
+  .alisivusisalto {
+    max-width: 1600px;
+    padding: 3rem 4rem;
+    gap: 4rem;
+  }
+
+  .alisivuteksti h2 {
+    font-size: 36px;
+  }
+
+  .alisivuteksti h3 {
+    font-size: 30px;
+  }
+
+  .alisivuteksti p {
+    font-size: 20px;
+  }
+
+  .alisivuintro p {
+    font-size: 24px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+
+  .footer {
+    gap: 20px;
+  }
+
+  .some-ikonit a {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+
+  /* KARTTA */
+  .kartta {
+    margin-top: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kartta iframe {
+    height: 700px;
+  }
 }
- 
+}
   
 
+
     
+
